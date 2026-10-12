@@ -1,0 +1,2 @@
+# Interactive bash only (fish is the login shell). Also read by Claude Code,
+# which runs its commands in bash (CLAUDE_CODE_SHELL in Claude Code's settings).

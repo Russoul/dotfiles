@@ -1,0 +1,8 @@
+#!/bin/sh
+# Block commits that add plaintext secrets. Enabled per clone with:
+#   git config core.hooksPath .githooks
+# Falls back to `nix run` when gitleaks isn't installed yet (before the first switch).
+if command -v gitleaks >/dev/null 2>&1; then
+  exec gitleaks git --pre-commit --staged --redact --verbose
+fi
+exec nix run nixpkgs#gitleaks -- git --pre-commit --staged --redact --verbose

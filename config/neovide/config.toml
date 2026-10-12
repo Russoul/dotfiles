@@ -1,0 +1,7 @@
+[font]
+normal = ["EversonMono Nerd Font"]
+size = 14.0
+
+# Disable ligatures: standard, contextual alternates, and discretionary
+[font.features]
+"EversonMono Nerd Font" = ["-liga", "-calt", "-dlig"]

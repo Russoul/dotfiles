@@ -1,0 +1,3 @@
+. "$HOME/.cargo/env"
+
+[ -f "/Users/russoul/.ghcup/env" ] && . "/Users/russoul/.ghcup/env" # ghcup-env
