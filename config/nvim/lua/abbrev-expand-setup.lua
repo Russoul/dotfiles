@@ -405,5 +405,6 @@ vim.api.nvim_set_keymap('i', '<C-]>', '<Left><C-o>:lua require("abbrev-expand").
   { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', '<C-]>', ':lua require("abbrev-expand").expand("\'>")<CR>',
   { noremap = true, silent = true })
+vim.keymap.set('t', '<C-]>', function() require("abbrev-expand").expand_term() end)
 
 return M

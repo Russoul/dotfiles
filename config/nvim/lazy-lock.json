@@ -1,5 +1,5 @@
 {
-  "abbrev-expand.nvim": { "branch": "main", "commit": "803bfe9c08167b68c6c617bd2468f0955ca29acd" },
+  "abbrev-expand.nvim": { "branch": "main", "commit": "fe8eaacb628889f1269fde26c56bb475aa9b5e16" },
   "blame.nvim": { "branch": "main", "commit": "3e6b2ef4905982cd7d26eb5b18b0e761138eb5ab" },
   "block-move.nvim": { "branch": "main", "commit": "f404e3f8f28d9e3a2ad9b7e78e138a2c69720162" },
   "bufferline.nvim": { "branch": "main", "commit": "81820cac7c85e51e4cf179f8a66d13dbf7b032d9" },

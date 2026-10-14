@@ -469,7 +469,7 @@ vim.cmd [[nnoremap <silent> <Space><C-O> :call JumpPrevInBuf()<CR>]]
 require('gitsigns-setup')
 
 ---------- abbrev-expand ----------
--- TODO: make this work in terminals and popup windows, like one found in telescope
+-- TODO: make this work in popup windows, like one found in telescope
 require('abbrev-expand').setup(require('abbrev-expand-setup'))
 
 ------------------- Octo --------------------
