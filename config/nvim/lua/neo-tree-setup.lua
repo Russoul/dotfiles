@@ -47,4 +47,9 @@ require('neo-tree').setup({
 })
 
 -- Same key nvim-tree used.
-vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>', { silent = true, desc = 'Neo-tree: toggle sidebar' })
+vim.keymap.set('n', '<C-b>', function()
+  -- Reveal only real files. For a shpool://, oil:// etc. buffer neo-tree asks to change cwd,
+  -- opens the split from that prompt's float without waiting for an answer, and the split
+  -- dies with the float ("Invalid window id", then E95 on every later toggle in the tab).
+  require('neo-tree.command').execute({ toggle = true, reveal = vim.bo.buftype == '' })
+end, { silent = true, desc = 'Neo-tree: toggle sidebar' })
