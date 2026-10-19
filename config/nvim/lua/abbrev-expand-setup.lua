@@ -401,10 +401,8 @@ M.map = {
   {"ltelvl"   , "≼"},
 }
 
-vim.api.nvim_set_keymap('i', '<C-]>', '<Left><C-o>:lua require("abbrev-expand").expand(".")<CR><Right>',
-  { noremap = true, silent = true })
+vim.keymap.set({ 'i', 'c', 't' }, '<C-]>', function() require("abbrev-expand").expand() end)
 vim.api.nvim_set_keymap('x', '<C-]>', ':lua require("abbrev-expand").expand("\'>")<CR>',
   { noremap = true, silent = true })
-vim.keymap.set('t', '<C-]>', function() require("abbrev-expand").expand_term() end)
 
 return M
